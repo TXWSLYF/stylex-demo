@@ -6,10 +6,28 @@
         "useBuiltIns": "usage",
         "corejs": "3.0.0"
       }
-    ]
+    ],
+    "@babel/preset-react"
   ],
   "plugins": [
     "@babel/plugin-syntax-dynamic-import",
-    "@babel/plugin-proposal-class-properties"
+    "@babel/plugin-proposal-class-properties",
+    [
+      "@stylexjs/babel-plugin",
+      {
+        "dev": true,
+        // Set this to true for snapshot testing
+        // default: false
+        "test": false,
+        // Required for CSS variable support
+        "unstable_moduleResolution": {
+          // type: 'commonJS' | 'haste'
+          // default: 'commonJS'
+          "type": "commonJS",
+          // The absolute path to the root directory of your project
+          "rootDir": "__dirname"
+        }
+      }
+    ]
   ]
 }

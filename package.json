@@ -58,6 +58,12 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
-    "core-js": "^3.26.1"
+    "@babel/preset-react": "^7.23.3",
+    "@stylexjs/babel-plugin": "^0.3.0",
+    "@stylexjs/stylex": "^0.3.0",
+    "@stylexjs/webpack-plugin": "^0.3.0",
+    "core-js": "^3.26.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
